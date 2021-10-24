@@ -1,0 +1,1 @@
+﻿select * from Cars inner join Brands on Brands.BrandId=Cars.BrandId inner join Colors on Colors.ColorId=Cars.ColorId;

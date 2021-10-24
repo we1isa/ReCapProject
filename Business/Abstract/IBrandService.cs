@@ -3,10 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataAccess.Abstarct
+namespace Business.Abstract
 {
-   public interface ICarDal:IEntityRepository<Car>
+    public interface IBrandService
     {
-       
+        List<Brand> GetAll();
     }
 }
