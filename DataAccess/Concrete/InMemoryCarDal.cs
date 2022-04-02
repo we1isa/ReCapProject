@@ -1,5 +1,7 @@
-﻿using DataAccess.Abstarct;
+﻿using Core.DataAccess;
+using DataAccess.Abstarct;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,6 +58,11 @@ namespace DataAccess.Concrete
             return _cars.Where(c=> c.Id== ıd).ToList();
         }
 
+        public List<CarDetailDto> GetCarDetails()
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Brand> GetCarsByBrandId(int brandId)
         {
             throw new NotImplementedException();
@@ -73,6 +80,14 @@ namespace DataAccess.Concrete
             carToUpdate.Description = car.Description;
         }
 
-        
+        List<Car> IEntityRepository<Car>.GetCarsByBrandId(int brandId)
+        {
+            throw new NotImplementedException();
+        }
+
+        List<Car> IEntityRepository<Car>.GetCarsByColorId(int colorId)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
