@@ -21,5 +21,8 @@ namespace Business.Constants
         public static string ColorDeleted = "Renk silindi";
         public static string ColorUpdated = "Renk güncellendi";
         public static string ColorListed = "Renk listelendi";
+        public static string RentalAdded = "Rental eklendi";
+        public static string RentalInvalid = "Rental geçersiz";
+
     }
 }
