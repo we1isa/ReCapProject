@@ -22,6 +22,25 @@ namespace ConsoleUI
             //CustomerUpdateTest();
             //RentalAddTest();
 
+            UserGetAllTest();
+
+        }
+
+        private static void UserGetAllTest()
+        {
+            UserManager userManager = new UserManager(new EfUserDal());
+            var result = userManager.GetAll();
+            if (result.Success == true)
+            {
+                foreach (var user in userManager.GetAll().Data)
+                {
+                    Console.WriteLine(user.FirstName + " - " + user.LastName);
+                }
+            }
+            else
+            {
+                Console.WriteLine(result.Message);
+            }
         }
 
         private static void RentalAddTest()

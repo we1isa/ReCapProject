@@ -23,6 +23,8 @@ namespace Business.Constants
         public static string ColorListed = "Renk listelendi";
         public static string RentalAdded = "Rental eklendi";
         public static string RentalInvalid = "Rental geçersiz";
+        public static string UserListed = "Kullanıcı listelendi";
+        public static string UserInvalid = "Kullanıcı geçersiz";
 
     }
 }
